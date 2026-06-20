@@ -3,17 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CoffeeHub Ratings</title>
+<title>CoffeeHub</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>☕ CoffeeHub</h1>
-    <p>Rate Your Favorite Coffee</p>
-</header>
+<nav>
+    <div class="logo">☕ CoffeeHub</div>
 
-<div id="coffeeList" class="coffee-grid"></div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#ratings">Ratings</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero">
+    <h1>Discover & Rate Your Favorite Coffee</h1>
+    <p>Share your opinion and help others find the best coffee.</p>
+
+    <a href="#menu" class="hero-btn">
+        Explore Coffee
+    </a>
+</section>
+
+<section id="about" class="about">
+    <h2>About CoffeeHub</h2>
+
+    <p>
+        CoffeeHub is a community platform where coffee lovers
+        can rate and discover the best coffee varieties.
+    </p>
+</section>
+
+<section id="ratings" class="leaderboard">
+    <h2>🏆 Top Rated Coffee</h2>
+    <div id="topCoffee">Loading...</div>
+</section>
+
+<section id="menu">
+    <h2 class="section-title">☕ Coffee Collection</h2>
+
+    <div id="coffeeList" class="coffee-grid"></div>
+</section>
+
+<footer>
+    <h3>CoffeeHub</h3>
+    <p>Built with Node.js, Express & SQLite</p>
+</footer>
 
 <script src="script.js"></script>
 
